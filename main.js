@@ -1,10 +1,11 @@
-const { createApp } = Vue
-
-  createApp({
-    data() {
-      return {
-        message: 'Hello Vue!'
-      }
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  },
+  methods: {
+    say: function(text) {
+      return 'Hello' + text;
     }
-  }).mount('#app')
-  console.log(createApp);
+  }
+})
